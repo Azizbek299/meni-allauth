@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Salom   {{user}}</h1>
+    <a href="{% url 'account_login' %}">Login</a>
+
+    {% load socialaccount %}
+{% providers_media_js %}
+<a href="{% provider_login_url 'facebook' method='js_sdk' %}">Login Button image</a>
+
+
+</body>
+</html>
